@@ -668,14 +668,14 @@ body {
     margin: 0 10px;
 }
 .techcontainer {
-
+ background-color: red;
 }
 .techtitle {
-
+ background-color: #000000;
 }
 .techbox {
-
+ background-color: #00b0f4;
 }
 .techbox img {
-    
+ background-color: #2adb00;
 }
