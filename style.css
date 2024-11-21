@@ -71,12 +71,13 @@ body {
 .video {
     width: 1100px;
     margin: auto;
+    padding-top: 50px;
 }
 
 .footer {
     width: 1100px;
     margin: auto;
-    margin-top: 300px;
+    margin-top: 200px;
 }
 
 .navbarcontainer {
@@ -667,15 +668,119 @@ body {
     padding-bottom: 20px;
     margin: 0 10px;
 }
+.tech {
+    display: flex;
+    justify-content: space-between;
+}
 .techcontainer {
- background-color: red;
+    max-width: 1100px;
+    margin-bottom: 50px;
+}
+.techtitlecontainer {
+    padding: 10px;
+    width: 243.75px;
 }
 .techtitle {
- background-color: #000000;
+    font-size: 16px;
+    color: #000000;
+    margin: 0;
 }
 .techbox {
- background-color: #00b0f4;
+    width: 263.75;
+    border: 1px solid #f1f1f1;;
+
 }
 .techbox img {
- background-color: #2adb00;
+    width: 263.75px;
+    height: 170px;
+}
+.techicons {
+    color: #888888;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 5px;
+    border-top: 1px solid rgba(0, 0, 0, .03);
+}
+.comic {
+    display: flex;
+    justify-content: space-between;
+}
+.comiccontainer {
+    max-width: 1100px;
+    margin-bottom: 50px;
+}
+.comictitlecontainer {
+    padding: 10px;
+    width: 522.5px;
+}
+.comictitle {
+    font-size: 16px;
+    color: #000000;
+    margin: 0;
+    padding-bottom: 40px;
+}
+.comicbox {
+    width: 263.75;
+    border: 1px solid #f1f1f1;;
+}
+.comicbox img {
+    width: 542.5px;
+    height: 200px;
+}
+.comicicons {
+    color: #888888;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 5px;
+    border-top: 1px solid rgba(0, 0, 0, .03);
+}
+.backgroundblack {
+    background-color: #1a1a1a;
+    width: 100%;
+}
+.videowatch {
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0 0 0 10px;
+}
+.videocontainer {
+    max-width: 1100px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.videotitle {
+    font-size: 16px;
+    color: #FFFFFFCC;
+    margin: 0;
+}
+.videobox {
+    width: 263.75;
+    margin-bottom: 40px;
+}
+.videobox img {
+    width: 263.75px;
+    height: 170px;
+    border-radius: 5px;
+}
+.videoicons {
+    color: #C6C6C6;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+.videoicontext {
+    margin: 0 20px 0 0;
+    color: #C6C6C6;
+    font-size: 12px;
+}
+.videotitlecontainer {
+    width: 263.5px;
 }
