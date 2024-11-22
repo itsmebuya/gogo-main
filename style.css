@@ -23,18 +23,35 @@ body {
 .linkedimg {
     cursor: pointer;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 5px;
+    position: relative;
 }
 
 .linkedimg img {
     width: 100%;
     height: 100%;
     transition-duration: 0.4s;
+
 }
 
-.linkedimg img:hover {
+.linkedimg:hover img {
     transform: scale(1.1);
     filter: brightness(60%);
+}
+
+.linkedimg:hover .linkedtext {
+    visibility: visible;
+}
+
+.linkedtext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: #ffffff;
+    top: 45%;
+    left: 40%;
+    visibility: hidden;
 }
 
 
@@ -77,7 +94,7 @@ body {
 .footer {
     width: 1100px;
     margin: auto;
-    margin-top: 200px;
+    padding: 50px 0;
 }
 
 .navbarcontainer {
@@ -145,6 +162,7 @@ body {
     margin-top: 0px;
     align-items: center;
     border-radius: 10px;
+
     /* background-color: red; */
 }
 
@@ -377,8 +395,11 @@ body {
     gap: 30px;
     margin-bottom: 30px;
 }
+.newsimg {
+    flex-shrink: 0;
+}
 
-.newsimg img {
+.newsimg img{
     width: 210px;
     height: 150px;
     border-radius: 5px;
@@ -638,6 +659,7 @@ body {
     bottom: 10px;
     left: 10px;
 }
+
 .interviewcontentcontainer {
     position: absolute;
     bottom: 15px;
@@ -649,51 +671,68 @@ body {
     height: 500px;
     border-radius: 5px;
 }
+
 .lifestylecontainer {
-    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
 }
+
 .lifestylebox {
     color: #000000;
     border: 1px solid #f1f1f1;
     width: 25%;
 }
-.lifestylebox img{
+
+.lifestylebox img {
     height: 230px;
     width: 260px;
+    border-radius: 5px;
 }
+
 .lifestyletitle {
     font-size: 16px;
     color: #000000;
-    border-bottom: 1px solid rgba(0, 0, 0, .03);;
+    border-bottom: 1px solid rgba(0, 0, 0, .03);
+    ;
     padding-bottom: 20px;
     margin: 0 10px;
 }
+
 .tech {
     display: flex;
     justify-content: space-between;
 }
+
 .techcontainer {
     max-width: 1100px;
     margin-bottom: 50px;
 }
+
 .techtitlecontainer {
     padding: 10px;
     width: 243.75px;
 }
+
 .techtitle {
     font-size: 16px;
     color: #000000;
     margin: 0;
 }
+
 .techbox {
     width: 263.75;
-    border: 1px solid #f1f1f1;;
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
 
 }
+
 .techbox img {
     width: 263.75px;
     height: 170px;
+    border-radius: 5px;
 }
+
 .techicons {
     color: #888888;
     display: flex;
@@ -703,32 +742,40 @@ body {
     padding-top: 5px;
     border-top: 1px solid rgba(0, 0, 0, .03);
 }
+
 .comic {
     display: flex;
     justify-content: space-between;
 }
+
 .comiccontainer {
     max-width: 1100px;
     margin-bottom: 50px;
 }
+
 .comictitlecontainer {
     padding: 10px;
     width: 522.5px;
 }
+
 .comictitle {
     font-size: 16px;
     color: #000000;
     margin: 0;
     padding-bottom: 40px;
 }
+
 .comicbox {
     width: 263.75;
-    border: 1px solid #f1f1f1;;
+    border: 1px solid #f1f1f1;
+    ;
 }
+
 .comicbox img {
     width: 542.5px;
     height: 200px;
 }
+
 .comicicons {
     color: #888888;
     display: flex;
@@ -738,15 +785,18 @@ body {
     padding-top: 5px;
     border-top: 1px solid rgba(0, 0, 0, .03);
 }
+
 .backgroundblack {
     background-color: #1a1a1a;
     width: 100%;
 }
+
 .videowatch {
     font-size: 18px;
     color: #ffffff;
     margin: 0 0 0 10px;
 }
+
 .videocontainer {
     max-width: 1100px;
     margin-top: 30px;
@@ -754,20 +804,24 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .videotitle {
     font-size: 16px;
     color: #FFFFFFCC;
     margin: 0;
 }
+
 .videobox {
     width: 263.75;
     margin-bottom: 40px;
 }
+
 .videobox img {
     width: 263.75px;
     height: 170px;
     border-radius: 5px;
 }
+
 .videoicons {
     color: #C6C6C6;
     display: flex;
@@ -776,11 +830,69 @@ body {
     margin-top: 10px;
     padding-top: 5px;
 }
+
 .videoicontext {
     margin: 0 20px 0 0;
     color: #C6C6C6;
     font-size: 12px;
 }
+
 .videotitlecontainer {
     width: 263.5px;
+}
+
+.footerlogo img {
+    width: 120px;
+    margin-right: 30px;
+}
+
+.footerlinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.logoandlinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerlinkbox {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 30px;
+}
+
+.footerlinkbox img {
+    width: 15px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.footerlinkbox p {
+    margin: 0;
+    font-size: 15;
+}
+
+.footerborder {
+    border-top: 1px solid #e5e5e5;
+    margin: 30px 0;
+}
+
+.footercontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footercontainer p {
+    font-size: 12px;
+    margin: 0;
+}
+
+.footericons {
+    display: flex;
+    justify-content: end;
+    color: rgba(0, 0, 0, .2);
+    gap: 10px;
 }
