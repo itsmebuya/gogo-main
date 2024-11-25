@@ -358,13 +358,19 @@ body {
 .datetoday {
     color: #407ce8;
     font-size: 16px;
+    font-weight: 740;
     margin: 0;
     padding-bottom: 5px;
     margin-top: 20px;
 }
 
 .datediv {
-    transition: 1s;
+    transition: 0.5s;
+    
+}
+.datediv:hover {
+    transform: translateY(-5px);
+    color: #407ce8;
 }
 
 .datepicker {
@@ -372,10 +378,9 @@ body {
     height: 7px;
     border-radius: 20px;
     background-color: #efefef;
-    /* background-color: #407ce8; */
 }
 
-/* .datediv:hover {} */
+
 
 .datetext {
     font-size: 13px;
@@ -550,7 +555,7 @@ body {
 .trendnewstitle {
     color: #000000;
     font-size: 20px;
-    margin: 30px 0 0;
+    margin: 30px 0 20px;
     display: flex;
     align-items: center;
 }
@@ -564,7 +569,12 @@ body {
     display: flex;
     align-items: center;
     border-bottom: 1px dashed rgba(0, 0, 0, .06);
-    ;
+    overflow: hidden;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.trendnewsbox:hover {
+    transform: scale(1.1);
 }
 
 .trendnewsnumber p {
@@ -591,6 +601,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 20px;
+    cursor: pointer;
 }
 
 .nextbuttontext {
@@ -861,6 +872,7 @@ body {
     display: flex;
     align-items: center;
     margin: 0 0 10px 30px;
+    cursor: pointer;
 }
 
 .footerlinkbox img {
@@ -895,4 +907,5 @@ body {
     justify-content: end;
     color: rgba(0, 0, 0, .2);
     gap: 10px;
+    cursor: pointer;
 }
