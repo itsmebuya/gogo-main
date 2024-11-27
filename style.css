@@ -72,6 +72,7 @@ body {
 .logo {
     height: 39.91px;
     position: relative;
+    margin-right: 30px;
 }
 
 .padding10 {
@@ -133,6 +134,7 @@ body {
 .navbarbutton {
     border-left: 1px solid rgba(0, 0, 0, .05);
     padding: 15px 20px;
+    display: none;
 }
 
 .menu {
@@ -140,8 +142,6 @@ body {
     flex-direction: row;
     align-items: baseline;
 }
-
-
 
 .menuDropdown {
     padding-left: 15px;
@@ -205,7 +205,7 @@ body {
     padding-right: 30px;
 }
 
-.headernewsimg {
+.headernewsimg img{
     width: 100%;
     height: 385px;
     object-fit: cover;
@@ -282,6 +282,40 @@ body {
     align-items: center;
     cursor: pointer;
     color: #767676;
+}
+.hiddenheader{
+    display: none;
+}
+.hiddennews img{
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    position: relative;
+}
+.hiddenbuttoncontainer {
+    display: flex;
+    width: 100%;
+}
+.hiddenbutton {
+    width: 100%;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 0;
+    color: #ffffff;
+    font-weight: 700;
+    transition-duration: 0.4s;
+    margin-top: -5px;
+    cursor: pointer;
+}
+.hiddenbutton:hover {
+    background-color: #0050a4;
+}
+.hiddenbutton img {
+    width: 15px;
+    height: 15px;
+    padding-right: 5px;
 }
 
 .headerinfo {
@@ -1097,6 +1131,7 @@ body {
 
     .logo {
         height: 23px;
+        margin-right: 0;
     }
 
     .news-right {
@@ -1131,14 +1166,37 @@ body {
         width: 47%;
     }
 
-    .headernewsing {
-        position: relative;
-
-    }
-
     .headerinfo {
         display: none;
     }
+
+    .headernews {
+        display: none;
+    }
+    .hiddenheader {
+        display: block;
+    }
+    .headernewstitle {
+        position: absolute;
+        bottom: 350px;
+        width: 100%;
+        padding-left: 20px;
+    }
+    .headertitle {
+        color: #ffffff;
+        font-size: 18px;
+    }
+    .buttonNiigem {
+        padding: 5px 10px;
+    }
+    .buttonNiigem:hover {
+        padding: 10px 20px;
+    }
+    .headershare {
+        background-color: #2b2b2a;
+        color: #c0c1c2;
+    }
+
 }
 
 @media screen and (max-width:1100px) {
