@@ -124,6 +124,7 @@ body {
     padding: 30px 0px;
     align-items: center;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .navbarphone {
@@ -1195,6 +1196,12 @@ body {
     .headershare {
         background-color: #2b2b2a;
         color: #c0c1c2;
+    }
+    .pollcontainer {
+        display: none;
+    }
+    .navbarbutton {
+        display: block;
     }
 
 }
